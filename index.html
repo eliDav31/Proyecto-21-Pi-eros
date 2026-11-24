@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="trabajo">
+    <main>
+        <h1>Pomodoro :)</h1>
+
+        <section class="reloj">
+            <p id="tipo">Trabajo</p>
+            <div id="tiempo" role="timer" aria-label="Tiempo restante">25:00</div>
+
+            <div class="botones">
+                <button id="btnIniciar">Iniciar</button>
+                <button id="btnReiniciar" class="secundario">Reiniciar</button>
+            </div>
+
+            <p class="sesiones">Sesiones de trabajo: <strong id="contador">0</strong></p>
+        </section>
+
+        <form id="formConfig">
+            <h2>Configuración</h2>
+            <label>Trabajo (min) <input type="number" id="minTrabajo" value="25" min="1" required></label>
+            <label>Descanso corto (min) <input type="number" id="minCorto" value="5" min="1" required></label>
+            <label>Descanso largo (min) <input type="number" id="minLargo" value="15" min="1" required></label>
+            <button type="submit">Guardar</button>
+        </form>
+    </main>
+    <script src="js.js"></script>
+</body>
+
+</html>
